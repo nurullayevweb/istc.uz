@@ -19,7 +19,8 @@
 .team__item {
     overflow: hidden;
     position: relative;
-    width: 600px;
+    max-width: 48%;
+    min-width: 600px;
     display: flex;
     justify-content: space-between;
     padding: 40px 0 0 40px;
@@ -93,7 +94,8 @@
 .team__item__none{
     overflow: hidden;
     position: relative;
-    width: 296px;
+    max-width: 24%;
+    min-width: 296px;
     display: flex;
     justify-content: flex-end;
     padding: 40px 0 0 40px;

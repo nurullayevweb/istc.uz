@@ -41,6 +41,12 @@
     align-items: center;
     border-radius: 16px 16px 0px 0px;
 }
+.news__img img{
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 
 .news__img span {
     // display: none;

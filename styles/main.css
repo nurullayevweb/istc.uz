@@ -72,6 +72,15 @@ body {
   overflow-x: hidden;
 }
 
+@media (min-width: 1600px) {
+  .container {
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 16px;
+    overflow-x: hidden;
+  }
+}
 /* header */
 .header {
   background: var(--main-dark-red-color);
@@ -753,7 +762,8 @@ body {
 .team__item {
   overflow: hidden;
   position: relative;
-  width: 600px;
+  max-width: 48%;
+  min-width: 600px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -841,7 +851,8 @@ body {
 .team__item__none {
   overflow: hidden;
   position: relative;
-  width: 296px;
+  max-width: 24%;
+  min-width: 296px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -922,6 +933,13 @@ body {
       -ms-flex-align: center;
           align-items: center;
   border-radius: 16px 16px 0px 0px;
+}
+
+.news__img img {
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .news__img span {
@@ -1712,6 +1730,11 @@ body {
           transform: scale(1.1);
 }
 
+@media (min-width: 1800px) {
+  .scroll-TOP {
+    right: 12%;
+  }
+}
 .aboutHero {
   padding: 80px 160px;
   border-radius: 0px 0px 20px 20px;

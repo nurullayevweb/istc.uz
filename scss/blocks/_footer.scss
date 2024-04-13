@@ -225,3 +225,11 @@
 .footer__media__item:hover a img{
     transform: scale(1.1);
 }
+
+
+@media (min-width: 1800px) { 
+    .scroll-TOP {
+        right: 12%;
+    }
+  
+}
