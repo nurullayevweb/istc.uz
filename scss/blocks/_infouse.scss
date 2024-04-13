@@ -199,3 +199,19 @@
     background-position: center;
     background-repeat: no-repeat;
 }
+
+@media (min-width: 1800px) { 
+    .infocard__one {
+        width: 733px;
+    }
+    .infocard__two {
+        width: 687px;
+    }
+    .info__forms {
+        width: 622px;}
+
+    .form__email textarea{
+        max-width: 524px;
+        min-width: 524px;
+    }
+}

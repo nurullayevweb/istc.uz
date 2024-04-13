@@ -4,6 +4,7 @@
 }
 
 .hero__all {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -34,9 +35,33 @@
     transform: rotate(360deg) scale(1.1);
 }
 
-.hero__bg {
-    width: 50%;
-    height: 450px;
-    background-image: url(/images/hero/Illustration.svg);
-    background-size: 100% 448px;
+
+.hero__bg img{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+// .hero__bg {
+//     width: 50%;
+//     height: 450px;
+//     background-image: url(/images/hero/Illustration.svg);
+//     background-size: 100% 448px;
+// }
+
+@media (min-width: 1860px) {
+    .hero__title{
+        width: 700px;
+        font-size: 72px;
+    }
+    .hero__bg {
+        width: 48%;
+    }
+    .hero__bg img{
+        width: 100%;
+    }
+    .title__down__bottom{
+        width: 56px;
+        height: 56px;
+        left: 320px;
+    }
 }
