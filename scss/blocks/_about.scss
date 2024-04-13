@@ -124,6 +124,7 @@
 
 .about__bottom__link {
     display: inline-flex;
+    width: max-content;
     color: var(--main-white-color);
     font-size: 20px;
     font-weight: 500;
@@ -154,4 +155,12 @@
 }
 .about__bottom__link:hover::after{
     transform: rotate(-30deg) scale(1.4);
+}
+
+.about__bottom__link__rotate::after{
+    transform: rotate(90deg) scale(1.4);
+}
+
+.about__bottom__link__rotate:hover::after{
+    transform: rotate(90deg) scale(1.6);
 }

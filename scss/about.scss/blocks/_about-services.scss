@@ -1,0 +1,91 @@
+.aboutServices {
+    padding: 72px 0 0 0;
+}
+
+.aboutServices__all {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+}
+
+.aboutServices__list {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 30px;
+}
+
+.aboutServices__item {
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: space-between;
+    min-width: 290px;
+    min-height: 430px;
+    max-height: 430px;
+    width: 23.5%;
+    padding: 32px 20px 20px 20px;
+    border-radius: 16px;
+    border: 1px solid #8A0303;
+    background: #FFFDFA;
+}
+
+.aboutServices__item::after {
+    content: '';
+    width: 100px;
+    height: 92.557px;
+    position: absolute;
+    background-image: url(/images/PAGE_about_images/vazifalar/logoopay.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    right: 0;
+    top: 0;
+}
+.aboutServices__item:hover{
+    box-shadow: -8px 39px 11px 0px rgba(138, 2, 2, 0.00), -5px 25px 10px 0px rgba(138, 2, 2, 0.01), -3px 14px 9px 0px rgba(138, 2, 2, 0.03), -1px 6px 6px 0px rgba(138, 2, 2, 0.03), 0px 2px 4px 0px rgba(138, 2, 2, 0.05);
+}
+.aboutServices__item:hover::after{
+    transform: scale(1.1) rotate(15deg);
+    right: 0;
+    top: 0;
+}
+
+.aboutServices__number {
+    color: var(--main-title-color);
+    font-size: 32px;
+    font-weight: 600;
+    // margin-bottom: 20px;
+}
+
+.aboutServices__text {
+    color: var(--main-text-color);
+    font-size: 16px;
+    font-weight: 400;
+    // margin-bottom: 48px;
+}
+
+.aboutServices__link {
+    color: var(--main-text-color);
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration-line: underline;
+    // margin-bottom: 26px;
+}
+.aboutServices__link:hover{
+    color: var(--main-title-color);
+}
+.aboutServices__img {
+    border-radius: 12px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.aboutServices__img img {
+    background-size: cover;
+    background-position: center;
+}

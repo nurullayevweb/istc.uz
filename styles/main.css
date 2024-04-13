@@ -40,7 +40,8 @@ body {
   max-width: 100%;
   background-color: #FFF6F6;
   background-image: url(/images/ptrn.png);
-  background-size: cover;
+  background-size: 1440px;
+  background-repeat: repeat;
   font-family: "Montserrat", sans-serif;
   overflow-x: hidden;
 }
@@ -184,7 +185,7 @@ body {
 }
 
 .navbar {
-  z-index: 19;
+  z-index: 999;
   width: 100%;
   position: sticky;
   top: -2px;
@@ -533,6 +534,9 @@ body {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
   color: var(--main-white-color);
   font-size: 20px;
   font-weight: 500;
@@ -568,9 +572,23 @@ body {
           transform: rotate(-30deg) scale(1.4);
 }
 
+.about__bottom__link__rotate::after {
+  -webkit-transform: rotate(90deg) scale(1.4);
+          transform: rotate(90deg) scale(1.4);
+}
+
+.about__bottom__link__rotate:hover::after {
+  -webkit-transform: rotate(90deg) scale(1.6);
+          transform: rotate(90deg) scale(1.6);
+}
+
 /* functions */
 .functions {
   padding: 72px 0 42px 0;
+}
+
+.functionss {
+  padding: 42px 0 42px;
 }
 
 .functions__all {
@@ -631,6 +649,11 @@ body {
 .functions__item:hover {
   -webkit-box-shadow: -8px 39px 11px 0px rgba(138, 2, 2, 0), -5px 25px 10px 0px rgba(138, 2, 2, 0.01), -3px 14px 9px 0px rgba(138, 2, 2, 0.03), -1px 6px 6px 0px rgba(138, 2, 2, 0.03), 0px 2px 4px 0px rgba(138, 2, 2, 0.05);
           box-shadow: -8px 39px 11px 0px rgba(138, 2, 2, 0), -5px 25px 10px 0px rgba(138, 2, 2, 0.01), -3px 14px 9px 0px rgba(138, 2, 2, 0.03), -1px 6px 6px 0px rgba(138, 2, 2, 0.03), 0px 2px 4px 0px rgba(138, 2, 2, 0.05);
+}
+
+.functions__item:hover img {
+  -webkit-transform: scale(1.04);
+          transform: scale(1.04);
 }
 
 .functions__texts {
@@ -908,8 +931,8 @@ body {
   opacity: 0.8;
   background: linear-gradient(109deg, #5E0303 0%, #8A0202 100%);
   top: -300px;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 .news__item:hover .news__img span {
@@ -919,8 +942,8 @@ body {
 .news__img__logo {
   position: absolute;
   top: -300px;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 .news__item:hover .news__img__logo {
@@ -1687,4 +1710,162 @@ body {
 .footer__media__item:hover a img {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+}
+
+.aboutHero {
+  padding: 80px 160px;
+  border-radius: 0px 0px 20px 20px;
+  background: var(--red, linear-gradient(180deg, #5E0303 0%, #8A0202 100%));
+}
+
+.aboutHero::after {
+  content: "";
+  z-index: 0;
+  width: 788px;
+  height: 788px;
+  position: absolute;
+  background-image: url(/images/PAGE_about_images/hero/ellipspattern.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  top: calc(50% - 250px);
+  left: calc(50% - 900px);
+}
+
+.aboutHero__all {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.aboutHero__texts {
+  z-index: 21;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 42%;
+}
+
+.aboutServices {
+  padding: 72px 0 0 0;
+}
+
+.aboutServices__all {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 24px;
+}
+
+.aboutServices__list {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-bottom: 30px;
+}
+
+.aboutServices__item {
+  overflow: hidden;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  min-width: 290px;
+  min-height: 430px;
+  max-height: 430px;
+  width: 23.5%;
+  padding: 32px 20px 20px 20px;
+  border-radius: 16px;
+  border: 1px solid #8A0303;
+  background: #FFFDFA;
+}
+
+.aboutServices__item::after {
+  content: "";
+  width: 100px;
+  height: 92.557px;
+  position: absolute;
+  background-image: url(/images/PAGE_about_images/vazifalar/logoopay.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  right: 0;
+  top: 0;
+}
+
+.aboutServices__item:hover {
+  -webkit-box-shadow: -8px 39px 11px 0px rgba(138, 2, 2, 0), -5px 25px 10px 0px rgba(138, 2, 2, 0.01), -3px 14px 9px 0px rgba(138, 2, 2, 0.03), -1px 6px 6px 0px rgba(138, 2, 2, 0.03), 0px 2px 4px 0px rgba(138, 2, 2, 0.05);
+          box-shadow: -8px 39px 11px 0px rgba(138, 2, 2, 0), -5px 25px 10px 0px rgba(138, 2, 2, 0.01), -3px 14px 9px 0px rgba(138, 2, 2, 0.03), -1px 6px 6px 0px rgba(138, 2, 2, 0.03), 0px 2px 4px 0px rgba(138, 2, 2, 0.05);
+}
+
+.aboutServices__item:hover::after {
+  -webkit-transform: scale(1.1) rotate(15deg);
+          transform: scale(1.1) rotate(15deg);
+  right: 0;
+  top: 0;
+}
+
+.aboutServices__number {
+  color: var(--main-title-color);
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.aboutServices__text {
+  color: var(--main-text-color);
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.aboutServices__link {
+  color: var(--main-text-color);
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration-line: underline;
+}
+
+.aboutServices__link:hover {
+  color: var(--main-title-color);
+}
+
+.aboutServices__img {
+  border-radius: 12px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.aboutServices__img img {
+  background-size: cover;
+  background-position: center;
 }/*# sourceMappingURL=main.css.map */

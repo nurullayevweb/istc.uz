@@ -1,0 +1,33 @@
+// _about-hero
+
+.aboutHero {
+    padding: 80px 160px;
+    border-radius: 0px 0px 20px 20px;
+    background: var(--red, linear-gradient(180deg, #5E0303 0%, #8A0202 100%));
+}
+
+.aboutHero::after {
+    content: '';
+    z-index: 0;
+    width: 788px;
+    height: 788px;
+    position: absolute;
+    background-image: url(/images/PAGE_about_images/hero/ellipspattern.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: calc(50% - 250px);
+    left: calc(50% - 900px);
+}
+
+.aboutHero__all {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.aboutHero__texts {
+    z-index: 21;
+    display: flex;
+    flex-direction: column;
+    width: 42%;
+}

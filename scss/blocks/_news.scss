@@ -50,7 +50,7 @@
     opacity: 0.8;
     background: linear-gradient(109deg, #5E0303 0%, #8A0202 100%);
     top: -300px;
-    transition: all 0.2s ease-in-out;
+    transition: all 0.4s ease-in-out;
 }
 
 .news__item:hover .news__img span {
@@ -61,7 +61,7 @@
     // display: none;
     position: absolute;
     top: -300px;
-    transition: all 0.2s ease-in-out;
+    transition: all 0.4s ease-in-out;
 }
 
 .news__item:hover .news__img__logo {
