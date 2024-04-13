@@ -1,0 +1,42 @@
+/* HERO */
+.hero {
+    padding: 64px 0 130px 0;
+}
+
+.hero__all {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.hero__texts{
+    position: relative;
+}
+.hero__title {
+    width: 582px;
+    color: var(--main-title-color);
+    font-family: "Red Rose";
+    font-size: 64px;
+    font-weight: 400;
+    letter-spacing: -1.28px;
+}
+.title__down__bottom{
+    content: '';
+    position: absolute;
+    width: 46px;
+    height: 46px;
+    left: 270px;
+    bottom: 20px;
+    background-image: url(/images/hero/down.svg);
+    background-size: cover;
+    transition: all 0.3s ease-in-out;
+}
+.title__down__bottom:hover{
+    transform: rotate(360deg) scale(1.1);
+}
+
+.hero__bg {
+    width: 50%;
+    height: 450px;
+    background-image: url(/images/hero/Illustration.svg);
+    background-size: 100% 448px;
+}

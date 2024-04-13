@@ -1,0 +1,101 @@
+/* functions */
+.functions {
+    padding: 72px 0 42px 0;
+}
+
+.functions__all {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.functions__title {
+    color: var(--main-text-color);
+    text-align: center;
+    font-family: "Red Rose";
+    font-size: 64px;
+    font-weight: 700;
+}
+
+.functions__list {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin-bottom: 30px;
+    flex-shrink: 0;
+}
+
+.functions__item {
+    position: relative;
+    display: flex;
+    width: 49%;
+    min-width: 595px;
+    justify-content: space-between;
+    padding: 32px;
+    border-radius: 20px;
+    border: 1px solid #8A0303;
+    background: #FFFDFA;
+    transition: all 0.1s ease-in-out;
+    flex-shrink: 0;
+}
+
+.functions__item:hover {
+    box-shadow: -8px 39px 11px 0px rgba(138, 2, 2, 0.00), -5px 25px 10px 0px rgba(138, 2, 2, 0.01), -3px 14px 9px 0px rgba(138, 2, 2, 0.03), -1px 6px 6px 0px rgba(138, 2, 2, 0.03), 0px 2px 4px 0px rgba(138, 2, 2, 0.05);
+}
+
+.functions__texts {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 240px;
+}
+
+.functions__item__title {
+    width: 90%;
+    color: var(--main-text-color);
+    font-family: "Red Rose";
+    font-size: 44px;
+    font-weight: 400;
+}
+
+.functions__img {
+    position: absolute;
+    bottom: 32px;
+    right: 32px;
+}
+
+
+.functions__btn {
+    display: inline-flex;
+    align-items: center;
+    max-width: 164px;
+    color: var(--main-title-color);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 100%;
+    border-radius: 1920px;
+    border: 2px solid #8A0202;
+    background: rgba(255, 255, 255, 0.00);
+    padding: 18px 24px;
+    transition: all 0.1s ease-in-out;
+}
+
+.functions__btn::after {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    font-weight: 500;
+    background-image: url(/images/functions/arrow.svg);
+    background-size: 16px 16px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: 18px;
+    transition: all 0.1s ease-in-out;
+}
+
+.functions__btn:hover::after {
+    transform: rotate(-30deg) scale(1.4);
+}

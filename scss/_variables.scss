@@ -1,0 +1,24 @@
+/* VARIABLES */
+
+$main-bg-color: #FFF6F6;
+$main-text-color: #1E1E1E;
+$main-light-text-color: #F5DEDE;
+$main-title-color: #8A0303;
+$main-dark-blue-color: #00002C;
+$main-dark-red-color: #420000;
+$main-light-red-color: #FB4749;
+$main-gradient-color:  var(linear-gradient(180deg, #5E0303 0%, #8A0202 100%));
+$main-white-color: #fff;
+
+
+:root {
+  --main-bg-color: #{$main-bg-color};
+  --main-text-color: #{$main-text-color};
+  --main-light-text-color: #{$main-light-text-color};
+  --main-title-color: #{$main-title-color};
+  --main-dark-blue-color: #{$main-dark-blue-color};
+  --main-dark-red-color: #{$main-dark-red-color};
+  --main-light-red-color: #{$main-light-red-color};
+  --main-gradient-color: #{$main-gradient-color};
+  --main-white-color: #{$main-white-color};
+}

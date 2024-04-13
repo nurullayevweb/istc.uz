@@ -1,0 +1,126 @@
+/***newsssssssssssssss*/
+
+.news {
+    padding-bottom: 42px;
+}
+
+.news__all {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.news__list {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.news__item {
+    width: 32.5%;
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    border-radius: 20px;
+    border: 1px solid #8A0202;
+    background: #FFF;
+}
+
+.news__item:hover {
+    box-shadow: -8px 39px 11px 0px rgba(138, 2, 2, 0.00), -5px 25px 10px 0px rgba(138, 2, 2, 0.01), -3px 14px 9px 0px rgba(138, 2, 2, 0.03), -1px 6px 6px 0px rgba(138, 2, 2, 0.03), 0px 2px 4px 0px rgba(138, 2, 2, 0.05);
+}
+
+.news__img {
+    width: 100%;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px 16px 0px 0px;
+}
+
+.news__img span {
+    // display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    background: linear-gradient(109deg, #5E0303 0%, #8A0202 100%);
+    top: -300px;
+    transition: all 0.2s ease-in-out;
+}
+
+.news__item:hover .news__img span {
+    top: 0;
+}
+
+.news__img__logo {
+    // display: none;
+    position: absolute;
+    top: -300px;
+    transition: all 0.2s ease-in-out;
+}
+
+.news__item:hover .news__img__logo {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+// news__hashtag
+
+.news__hashtag {
+    width: max-content;
+    margin: 16px 0 12px;
+    color: var(--main-text-color);
+    font-size: 14px;
+    font-weight: 400;
+    padding: 8px 12px;
+    border-radius: 16px;
+    background: #F5DEDE;
+}
+
+.news__title {
+    overflow: hidden;
+    color: var(--main-text-color);
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 12px;
+    line-height: 150%;
+}
+
+.news__learnmore {
+    color: var(--main-text-color);
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration-line: underline;
+    margin-bottom: 24px;
+}
+
+.news__profile {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.news__profile__texts {
+    display: flex;
+    flex-direction: column;
+}
+
+.news__profile__texts h5 {
+    color: var(--main-text-color);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 150%;
+}
+.news__profile__texts p{
+    color:#697586;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 150%;
+}
