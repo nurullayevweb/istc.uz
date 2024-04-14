@@ -1595,6 +1595,7 @@ body {
 }
 
 .footer__all {
+  z-index: 28;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1605,6 +1606,7 @@ body {
 }
 
 .footer__logo {
+  z-index: 33;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
