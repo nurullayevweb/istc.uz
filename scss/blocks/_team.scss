@@ -28,6 +28,10 @@
     background: #FF4040;
     box-shadow: -4px 4px 32px 0px rgba(0, 0, 0, 0.08);
 }
+.team__item .team__imgs img{
+    transform: scale(1);
+    transition: all 0.2s ease-in-out;
+}
 .team__item:hover .team__imgs img{
     transform: scale(1.04);
 }
@@ -72,9 +76,14 @@
     gap: 12px;
     margin-bottom: 80px;
 }
-
+.teammedia__item img{
+    transform: scale(0.95);
+    transition: all 0.2s ease-in-out;
+    opacity: 0.65;
+}
 .teammedia__item:hover img{
-    transform: scale(1.2);
+    transform: scale(1.15);
+    opacity: 1;
 }
 
 .team__imgs{
@@ -108,7 +117,6 @@
     height: 100%;
     border-radius: 0;
 }
-
 
 @media (min-width: 1600px) { 
     .team__item{

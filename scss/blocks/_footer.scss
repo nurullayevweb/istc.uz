@@ -45,12 +45,12 @@
     position: absolute;
     right: 96px;
     bottom: 48px;
-    transition: all 0.2s ease-in-out;
+    animation: Scrolltop 1.4s infinite ease-in-out both;
 }
 
-.scroll-TOP:hover {
-    transform: scale(1.1);
-}
+// .scroll-TOP:hover {
+//     transform: scale(1.1);
+// }
 
 .footer__all {
     z-index: 28;
@@ -234,4 +234,16 @@
         right: 8%;
     }
   
+}
+
+@keyframes Scrolltop{
+    0%{
+        transform: scale(0.9);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+    100%{
+       transform: scale(0.9);
+    }
 }
