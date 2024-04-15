@@ -702,8 +702,8 @@ body {
   border-radius: 20px;
   border: 1px solid #8A0303;
   background: #FFFDFA;
-  -webkit-transition: all 0.1s ease-in-out;
-  transition: all 0.1s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   -ms-flex-negative: 0;
       flex-shrink: 0;
 }
@@ -711,6 +711,11 @@ body {
 .functions__item:hover {
   -webkit-box-shadow: -8px 39px 11px 0px rgba(138, 2, 2, 0), -5px 25px 10px 0px rgba(138, 2, 2, 0.01), -3px 14px 9px 0px rgba(138, 2, 2, 0.03), -1px 6px 6px 0px rgba(138, 2, 2, 0.03), 0px 2px 4px 0px rgba(138, 2, 2, 0.05);
           box-shadow: -8px 39px 11px 0px rgba(138, 2, 2, 0), -5px 25px 10px 0px rgba(138, 2, 2, 0.01), -3px 14px 9px 0px rgba(138, 2, 2, 0.03), -1px 6px 6px 0px rgba(138, 2, 2, 0.03), 0px 2px 4px 0px rgba(138, 2, 2, 0.05);
+}
+
+.functions__item img {
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .functions__item:hover img {
@@ -1926,6 +1931,8 @@ body {
   background-position: center;
   right: 0;
   top: 0;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
 }
 
 .aboutServices__item:hover {
