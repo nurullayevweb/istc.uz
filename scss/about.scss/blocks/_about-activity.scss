@@ -1,0 +1,100 @@
+.aboutActivity {
+    padding-bottom: 72px;
+}
+
+.aboutActivity__all {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.aboutActivity__list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 16px;
+}
+
+.aboutActivity__item {
+    overflow: hidden;
+    position: relative;
+    width: 32.5%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 32px 28px;
+    border-radius: 16px;
+    background: linear-gradient(130deg, #5E0303 0%, #8A0202 99.99%);
+}
+.aboutActivity__item::after{
+    content: '';
+    position: absolute;
+    width: 121px;
+    height: 111px;
+    background-image: url(/images/PAGE_about_images/huquqiy-asoslar/logo.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: -100px;
+    right: -100px;
+    transition: all 0.5s ease-in-out;
+    opacity: 0.3;
+}
+
+.aboutActivity__item:hover .aboutActivity__quote img{
+    transform: scale(1.15);
+}
+.aboutActivity__item:hover::after{
+    transform: rotate(375deg);
+    top: 0;
+    right: 0;
+}
+
+.aboutActivity__item__title {
+    color: var(--main-white-color);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 30px;
+}
+
+.aboutActivity__item__texts {
+    display: flex;
+    align-items: center;
+    column-gap: 16px;
+}
+
+.aboutActivity__item__texts::before {
+    content: '';
+    display: block;
+    width: 70px;
+    height: 70px;
+    background-image: url(/images/PAGE_about_images/huquqiy-asoslar/lexuzlogo.svg);
+}
+
+.aboutActivity__item__title {
+    color: var(--main-white-color);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 170%;
+    margin-bottom: 2px;
+}
+
+.aboutActivity__item__link{
+    color: var(--main-white-color);
+font-size: 14px;
+font-weight: 400;
+line-height: 171.429%;
+text-decoration-line: underline;
+opacity: 0.7;
+transition: all 0.3 ease-in-out;
+}
+
+.aboutActivity__item__link:hover{
+    opacity: 1;
+}
+
+.aboutActivity__item__w50{
+    width: 49.5%;
+}
