@@ -223,7 +223,9 @@
     column-gap: 12px;
     margin-top: 24px;
 }
-
+.footer__media__item:hover a img{
+    transition: all 0.1s ease-in-out;
+}
 .footer__media__item:hover a img{
     transform: scale(1.1);
 }
