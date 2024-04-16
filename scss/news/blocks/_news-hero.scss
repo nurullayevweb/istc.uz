@@ -1,0 +1,46 @@
+// _history-hero
+.newspage {
+    padding: 72px 0px;
+}
+
+.newspage__list {
+    flex-wrap: wrap;
+    row-gap: 24px;
+}
+
+.newspage__all {
+    align-items: center;
+}
+
+.newspage__upload {
+    display: flex;
+    color: var(--main-title-color);
+    padding: 18px 24px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 100%;
+    border-radius: 1920px;
+    border: 2px solid #8A0303;
+    column-gap: 12px;
+}
+
+.newspage__upload::after{
+    content: '';
+    display: block;
+    width: 18px;
+    height: 20px;
+    background-image: url(/images/PAGE_news_images/Vector.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all 0.1s ease-in-out;
+}
+
+.newspage__upload:hover::after{
+    transform: scale(1.2);
+}
+
+.allnewspadding0{
+    margin-bottom: 20px;
+}

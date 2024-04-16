@@ -2320,7 +2320,7 @@ body {
 
 .teamHeropadding {
   padding: 0;
-  padding-bottom: 120px;
+  padding-bottom: 72px;
 }
 
 .teamHero__all {
@@ -2332,4 +2332,59 @@ body {
 .teamHero__title {
   text-align: center;
   font-size: 40px;
+}
+
+.newspage {
+  padding: 72px 0px;
+}
+
+.newspage__list {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  row-gap: 24px;
+}
+
+.newspage__all {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.newspage__upload {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: var(--main-title-color);
+  padding: 18px 24px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 100%;
+  border-radius: 1920px;
+  border: 2px solid #8A0303;
+  -webkit-column-gap: 12px;
+     -moz-column-gap: 12px;
+          column-gap: 12px;
+}
+
+.newspage__upload::after {
+  content: "";
+  display: block;
+  width: 18px;
+  height: 20px;
+  background-image: url(/images/PAGE_news_images/Vector.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+
+.newspage__upload:hover::after {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.allnewspadding0 {
+  margin-bottom: 20px;
 }/*# sourceMappingURL=main.css.map */
