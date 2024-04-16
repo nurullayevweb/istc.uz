@@ -1664,8 +1664,16 @@ body {
   position: absolute;
   right: 96px;
   bottom: 48px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   -webkit-animation: Scrolltop 1.4s infinite ease-in-out both;
           animation: Scrolltop 1.4s infinite ease-in-out both;
+  border-radius: 50%;
+}
+
+.scroll-TOP:hover {
+  -webkit-box-shadow: rgba(38, 57, 77, 0.5) 0px 20px 30px -10px;
+          box-shadow: rgba(38, 57, 77, 0.5) 0px 20px 30px -10px;
 }
 
 .footer__all {
@@ -2236,4 +2244,65 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.historyHero {
+  padding: 80px 0 80px 0;
+}
+
+.historyHero__all {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.historyHero__texts {
+  width: 48%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 16px;
+}
+
+.historyHero__bottom__title {
+  color: var(--main-title-color);
+  font-family: "Red Rose";
+  font-size: 64px;
+  font-weight: 400;
+  letter-spacing: -1.28px;
+}
+
+.historyHero__bottom__text {
+  width: 90%;
+  color: var(--main-text-color);
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 145.455%;
+}
+
+.historyHero__img {
+  width: 50%;
+  height: 445px;
+  border-radius: 16px;
+  border: 5px solid #8A0303;
+  background: url(<path-to-image>) lightgray -242.134px -100.016px/164.795% 144.951% no-repeat;
+  overflow: hidden;
+}
+
+.historyHero__img img {
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }/*# sourceMappingURL=main.css.map */

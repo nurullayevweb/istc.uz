@@ -45,12 +45,14 @@
     position: absolute;
     right: 96px;
     bottom: 48px;
+    transition: all 0.3s ease-in-out;
     animation: Scrolltop 1.4s infinite ease-in-out both;
+    border-radius: 50%;
 }
 
-// .scroll-TOP:hover {
-//     transform: scale(1.1);
-// }
+.scroll-TOP:hover {
+    box-shadow: rgba(38, 57, 77,0.5) 0px 20px 30px -10px;
+}
 
 .footer__all {
     z-index: 28;
