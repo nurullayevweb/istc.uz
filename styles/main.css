@@ -937,6 +937,11 @@ body {
   margin-bottom: 22px;
 }
 
+.team__name__min {
+  font-size: 32px;
+  line-height: 43.2px;
+}
+
 .team__info {
   color: var(--main-white-color);
   font-size: 16px;
@@ -1054,6 +1059,8 @@ body {
   border-radius: 20px;
   border: 1px solid #8A0202;
   background: #FFF;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .news__item:hover {
@@ -2305,4 +2312,24 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.teamHero {
+  padding: 72px 0;
+}
+
+.teamHeropadding {
+  padding: 0;
+  padding-bottom: 120px;
+}
+
+.teamHero__all {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.teamHero__title {
+  text-align: center;
+  font-size: 40px;
 }/*# sourceMappingURL=main.css.map */
