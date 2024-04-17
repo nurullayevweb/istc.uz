@@ -44,3 +44,11 @@
 .allnewspadding0{
     margin-bottom: 20px;
 }
+
+.news__learnmore{
+    color: #000;
+    transition: all 0.2s ease-in-out;
+}
+.news__learnmore:hover{
+    color: var(--main-title-color);
+}
