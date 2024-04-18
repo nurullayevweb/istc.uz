@@ -1070,6 +1070,7 @@ body {
 
 .news__img {
   width: 100%;
+  height: 220px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2766,4 +2767,119 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   row-gap: 10px;
+}
+
+.course {
+  padding: 72px 0;
+}
+
+.course__all {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 24px;
+}
+
+.course__list a {
+  width: 32.5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.course__list {
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  row-gap: 16px;
+}
+
+.course__item {
+  width: 100%;
+  padding: 20px;
+}
+
+.course__news__img {
+  border: 1px solid var(--main-light-red-color);
+  border-radius: 16px 16px 16px 16px;
+}
+
+.course__liked {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 6px;
+}
+
+.course__checked__like {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 32px;
+  height: 32px;
+  border: none;
+  background-color: transparent;
+  background-image: url(/images/PAGE_course_images/heart.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.course__checked__like:checked {
+  background-image: url(/images/PAGE_course_images/heartcheck.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.course__hashtag {
+  color: #8A0303;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 166.667%;
+  background: #F5DEDE;
+  border-radius: 45px;
+  padding: 6px 16px;
+}
+
+.course__inner__books::before {
+  background-image: url(/images/PAGE_course_images/book.svg);
+}
+
+.course__inner__times::before {
+  background-image: url(/images/PAGE_course_images/timer-start.svg);
+}
+
+.course__news__title {
+  margin-bottom: 24px;
+}
+
+.course__news__title__h5 {
+  color: var(--main-title-color);
+  font-size: 22px;
+  font-weight: 500;
+  margin-top: 24px;
+  margin-bottom: 12px;
 }/*# sourceMappingURL=main.css.map */
