@@ -319,6 +319,9 @@ border-radius: 0;
 
 // .navbar__flag__ru
 
+.navbar__flag__ru::before{
+    background-image: url(/images/header/qrqpq.png);
+}
 .navbar__flag__eng::before{
     background-image: url(/images/header/russia\ 1.png);
 }
