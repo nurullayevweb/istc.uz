@@ -77,6 +77,21 @@ body {
     padding: 0 48px;
   }
 }
+@media (max-width: 1000px) {
+  .container {
+    padding: 0 40px;
+  }
+}
+@media (max-width: 800px) {
+  .container {
+    padding: 0 32px;
+  }
+}
+@media (max-width: 600px) {
+  .container {
+    padding: 0 18px;
+  }
+}
 @media (min-width: 1600px) {
   .container {
     max-width: 1300px;
