@@ -92,3 +92,30 @@
     background-size: cover;
     background-position: center;
 }
+
+
+
+
+@media (max-width: 1300px){
+    .aboutServices__list{
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 24px;
+    }
+    .aboutServices__item {
+        width: 48%;
+        row-gap: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .aboutServices__list{
+        gap: 20px;
+    }
+}
+@media (max-width: 500px) {
+    .aboutServices__item {
+        width: 95%;
+    }
+}

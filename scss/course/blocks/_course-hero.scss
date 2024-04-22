@@ -91,3 +91,27 @@
     margin-top: 24px;
     margin-bottom: 12px;
 }
+
+@media (max-width: 1100px) {
+    .course__list{
+        justify-content: center;
+    }
+    .course__list a {
+        width: 48%;
+    }
+}
+@media (max-width: 900px) {
+    .course__list a {
+        width: 80%;
+    }
+}
+@media (max-width: 600px) {
+    .course__list a {
+        width: 90%;
+    }
+}
+@media (max-width: 500px) {
+    .course__list a {
+        width: 100%;
+    }
+}

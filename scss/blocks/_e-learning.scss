@@ -20,13 +20,39 @@
     flex-direction: column;
     gap: 12px;
 }
-
-.e_learning__text h3 {
+.e_learning__text__link{
+    width: 354px;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+}
+.e_learning__text__title {
+    position: relative;
+    display: flex;
+    align-items: center;
     color: var(--main-white-color);
     font-family: "Red Rose";
     font-size: 56px;
     font-weight: 700;
     line-height: 119.643%;
+}
+
+.e_learning__text__title::after {
+    position: absolute;
+    display: block;
+    content: '';
+    width: 46px;
+    height: 46px;
+    background-image: url(/images/e-learning/arroww.svg);
+    background-size: cover;
+    background-position: center;
+    right: -116px;
+    transform: rotate(-30deg);
+    transition: all 0.4s ease-in-out;
+}
+.e_learning__text__link:hover .e_learning__text__title::after {
+    right: -60px;
+    transform: rotate(-390deg);
 }
 
 .e_learning__text p {
@@ -77,6 +103,6 @@
     opacity: 0.9;
 }
 
-.e_learning__img img{
+.e_learning__img img {
     width: 700px;
 }
